@@ -14,7 +14,7 @@ Para hacer pruebas con el prototipo de dokan:
 3. En el menú de visual studio elegimos build=>batch build y marcamos las opciones de win32/x64 release de todos los proyectos (se puede obviar memfs, ya que usaremos el ejemplo mirror). (https://github.com/dokan-dev/dokany/wiki/Build)
 4. Si da algun problema añadir a visual studio las ultimas versiones de "spectre mitigated libs", desde el menu Tools ==> Get tools and features ==> Individual Components
 5. Una vez compilado el proyecto, usamos los drivers
-6. Para usar drivers modificados por ti sin firmar, hay que escribir esto en una consola de comandos y reiniciar:
+6. Para usar drivers modificados por ti sin firmar, hay que escribir esto en una consola de comandos (como administrador) y reiniciar:
     > bcdedit -set loadoptions DDISABLE_INTEGRITY_CHECKS
     
     > bcdedit -set TESTSIGNING ON
