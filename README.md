@@ -25,7 +25,7 @@ Para hacer pruebas con el prototipo de dokan:
     
     > x64\Release\dokannp.dll =========> %WINDIR%\system32
     
-6. Instala el driver desde/x64/Release con la instrucción 
+6. Instala el driver desde/x64/Release con la instrucción (usando usuario administrador): 
     > dokanctl.exe /i d
 7. Ya puedes montar el filesystem desde la misma ruta en la que se encuentra mirror.exe con la instrucción:
     > mirror.exe /r C:\Users /l m
