@@ -11,7 +11,7 @@ Para hacer pruebas con el prototipo de dokan:
 2. Instalar las dependencias de Visual Studio indicadas en el git de dokan (WDK, y WSDK) con VisualStudio cerrado (https://github.com/dokan-dev/dokany/wiki/Build)
 3. Abrir la solucion de dokan en Visual Studio
 3. En el menú de visual studio elegimos build=>batch build y marcamos las opciones de win32/x64 release de todos los proyectos (se puede obviar memfs, ya que usaremos el ejemplo mirror). (https://github.com/dokan-dev/dokany/wiki/Build)
-4. Si da algun problema añadir a visual studio las ultimas versiones de "spectre mitigated libs", desde el menu Tools ==> Get tools and features
+4. Si da algun problema añadir a visual studio las ultimas versiones de "spectre mitigated libs", desde el menu Tools ==> Get tools and features ==> Individual Components
 5. Una vez compilado el proyecto, usamos los drivers
 6. Para usar drivers modificados por ti sin firmar, hay que escribir esto en una consola de comandos y reiniciar:
     > bcdedit -set loadoptions DDISABLE_INTEGRITY_CHECKS
